@@ -4,10 +4,14 @@
 public class DiamondExercises {
     public static void main(String[] args) {
         DiamondExercises diamondExercises = new DiamondExercises();
+        diamondExercises.printIsoscelesTriangle(3);
+        System.out.println();
+        diamondExercises.printDiamond(3);
+        System.out.println();
         diamondExercises.printDiamondWithName(3);
     }
 
-    public void printLine(String s,int n){
+    public void printLine(String s, int n) {
         for (int i = 0; i < n; i++) {
             System.out.print(s);
         }
@@ -15,16 +19,16 @@ public class DiamondExercises {
 
     public void printIsoscelesTriangle(int n) {
         for (int i = 1; i <= n; i++) {
-            this.printLine(" ",n - i);
-            this.printLine("*",2 * i - 1);
+            this.printLine(" ", n - i);
+            this.printLine("*", 2 * i - 1);
             System.out.println();
         }
     }
 
     public void printIsoscelesTriangleWithDefinedLastLine(int n) {
         for (int i = 1; i < n; i++) {
-            this.printLine(" ",n - i);
-            this.printLine("*",2 * i - 1);
+            this.printLine(" ", n - i);
+            this.printLine("*", 2 * i - 1);
             System.out.println();
         }
         System.out.println("zhangpei");
@@ -32,8 +36,8 @@ public class DiamondExercises {
 
     public void printIsoscelesTriangleDownAddOneSpace(int n) {
         for (int i = n; i >= 0; i--) {
-            this.printLine(" ",n - i + 1);
-            this.printLine("*",2 * i - 1);
+            this.printLine(" ", n - i + 1);
+            this.printLine("*", 2 * i - 1);
             System.out.println();
         }
     }
@@ -41,7 +45,7 @@ public class DiamondExercises {
     public void printIsoscelesTriangleDown(int n) {
         for (int i = n; i >= 0; i--) {
             this.printLine(" ", n - i);
-            this.printLine("*",2 * i - 1);
+            this.printLine("*", 2 * i - 1);
             System.out.println();
         }
     }
